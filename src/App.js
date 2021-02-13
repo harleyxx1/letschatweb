@@ -4,7 +4,7 @@ import { io } from 'socket.io-client';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComments, faHeart, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
-const socket = io('http://localhost:5000/', { transports: ['websocket']});
+const socket = io('https://dcchatserver.herokuapp.com/', { transports: ['websocket']});
 
 function App() {
   const loginInput = useRef(null);
